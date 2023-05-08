@@ -1,0 +1,18 @@
+#this is the old string
+string = "abracadabra"
+
+print(" my string is  "+ string)
+# Change the string to list of characters
+char_list = list(string)
+
+#this is the function that will modify the string
+
+def function(char_list , position, character):
+    
+ # Loop the list to find the pos
+ for i in range(len(char_list)):
+     if i == position:
+         char_list[i] = character 
+         break 
+ return''.join(char_list)
+ 
